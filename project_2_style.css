@@ -1,0 +1,162 @@
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables  */
+:root {
+    --navbar-height: 39px;
+}
+
+/* Navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+/* Navigation bar : Logo and image  */
+#logo {
+    margin: 8px 17px;
+}
+
+#logo img {
+    height: 63px;
+    margin: 3px 5px;
+}
+
+/* Navigation bar : list and styling  */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    padding: 5px 23px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Home section  */
+#home {
+    display: flex;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    padding: 3px 23px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    background: url('https://vegplatter.in/files/public/inline-images/bg_12.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    text-decoration-color: azure;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+}
+
+#home h1 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Services section  */
+#services {
+    margin: 29px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    border-radius: 20px;
+    margin: 3px;
+    padding: 23px;
+    background-color: rgba(103, 62, 36, 0.667);
+}
+
+#services .box img {
+    height: 150px;
+    display: block;
+    border-radius: 15px;
+    border-color: rgb(21, 255, 0);
+    border-width: 12px;
+    margin: auto;
+}
+
+.secondary  {
+        padding: 5px 15px;
+        border: 2px solid rgb(245, 241, 241);
+        background-color: rgb(13, 9, 79);
+        color: rgb(252, 249, 249);
+        margin: 15px;
+        align-items: center;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+/* Utility classes */
+.h-primary {
+    font-size: 2.8rem;
+    /* margin: 12px; */
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    /* margin: 12px; */
+    padding: 12px;
+}
+
+.btn {
+    padding: 5px 15px;
+    border: 2px solid rgb(245, 241, 241);
+    background-color: rgb(13, 9, 79);
+    color: rgb(252, 249, 249);
+    margin: 15px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rgb(87, 85, 85);
+}
